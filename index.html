@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aakash Mohanty — developer portfolio showcasing web, Python, and IoT projects.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Aakash Mohanty | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="header">
+      <a class="brand" href="#home" aria-label="Aakash home"><span class="brand-mark">A</span><span>akkyy<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" id="navMenu" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme" title="Switch theme">☼</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR OPPORTUNITIES</p>
+          <h1>Building ideas<br>into <span class="gradient-text">digital reality.</span></h1>
+          <p class="hero-intro">Hey, I'm <strong>Aakash Mohanty</strong> — a curious developer exploring web technologies, Python, data, and smart IoT projects.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+            <a class="button button-ghost" href="#contact">Let's talk</a>
+          </div>
+          <div class="hero-meta"><span>📍 Odisha, India</span><span>✦ Learning by building</span></div>
+        </div>
+        <div class="hero-art reveal" aria-label="Abstract developer illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="code-card"><div class="window-dots"><i></i><i></i><i></i></div>
+            <p class="code-muted">developer.js</p>
+            <pre><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Aakash"</span>,
+  passion: <span class="code-green">"building"</span>,
+  focus: [
+    <span class="code-yellow">"Web Dev"</span>,
+    <span class="code-yellow">"Python"</span>,
+    <span class="code-yellow">"IoT"</span>
+  ],
+  <span class="code-purple">create</span>: () =&gt; <span class="code-green">"What's next?"</span>
+};</pre>
+            <div class="code-footer"><span class="pulse"></span> Always shipping something</div>
+          </div>
+          <div class="floating-chip chip-top"> &lt;/&gt; HTML · CSS · JS</div>
+          <div class="floating-chip chip-bottom">⚡ Curiosity → Creation</div>
+        </div>
+        <a class="scroll-cue" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading reveal"><p class="eyebrow">01 / ABOUT ME</p><h2>More than just <span class="gradient-text">code.</span></h2></div>
+        <div class="about-grid">
+          <div class="about-text reveal"><p class="large-copy">I enjoy turning problems into practical, thoughtful experiences.</p><p>I'm building my skills across frontend development, Python programming, data analysis, and embedded systems. I like learning how things work, experimenting with new tools, and bringing complete projects to life.</p><p>This portfolio is my little corner of the internet — a place to share what I'm learning and what I'm creating.</p></div>
+          <div class="about-facts reveal"><div class="fact"><span class="fact-number">01</span><div><strong>Build</strong><small>Learn through real projects</small></div></div><div class="fact"><span class="fact-number">02</span><div><strong>Explore</strong><small>Stay curious and keep improving</small></div></div><div class="fact"><span class="fact-number">03</span><div><strong>Share</strong><small>Make useful things for people</small></div></div></div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading reveal"><p class="eyebrow">02 / TOOLKIT</p><h2>Things I work <span class="gradient-text">with.</span></h2><p class="section-subtitle">A growing toolkit — improving with every project.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Frontend</h3><p>Creating responsive, accessible web interfaces.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">Py</div><h3>Python & Data</h3><p>Programming, data exploration, and automation.</p><div class="tags"><span>Python</span><span>OpenCV</span><span>Power BI</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">⌁</div><h3>IoT & Hardware</h3><p>Connecting software with real-world devices.</p><div class="tags"><span>ESP32</span><span>Arduino</span><span>Sensors</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">◈</div><h3>Tools</h3><p>Building, testing, and managing projects.</p><div class="tags"><span>Git</span><span>VS Code</span><span>Jupyter</span></div></article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading reveal"><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects in <span class="gradient-text">progress.</span></h2><p class="section-subtitle">A few examples of what I've been exploring. Replace these details with your finished project links.</p></div>
+        <div class="project-toolbar reveal"><span>FILTER BY</span><div class="filter-group" role="group" aria-label="Filter projects"><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="web">Web</button><button class="filter-btn" data-filter="python">Python</button><button class="filter-btn" data-filter="iot">IoT</button></div></div>
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card reveal" data-category="iot"><div class="project-visual visual-iot"><span class="visual-symbol">◉</span><span class="visual-label">ESP32 · COMPUTER VISION</span></div><div class="project-info"><div class="project-type">IOT / EMBEDDED</div><h3>Smart Face Recognition Door Lock</h3><p>An ESP32-CAM based access-control concept with face recognition and relay-driven locking.</p><div class="project-bottom"><div class="tags"><span>ESP32-CAM</span><span>Arduino</span></div><a href="#contact" aria-label="Ask me about Smart Face Recognition Door Lock">Discuss ↗</a></div></div></article>
+          <article class="project-card reveal" data-category="python"><div class="project-visual visual-python"><span class="visual-symbol">▦</span><span class="visual-label">PYTHON · OPENCV</span></div><div class="project-info"><div class="project-type">PYTHON / COMPUTER VISION</div><h3>Face Attendance System</h3><p>A desktop attendance workflow exploring student registration, face training, and attendance records.</p><div class="project-bottom"><div class="tags"><span>Python</span><span>OpenCV</span></div><a href="#contact" aria-label="Ask me about Face Attendance System">Discuss ↗</a></div></div></article>
+          <article class="project-card reveal" data-category="web"><div class="project-visual visual-web"><span class="visual-symbol">{ }</span><span class="visual-label">HTML · CSS · JAVASCRIPT</span></div><div class="project-info"><div class="project-type">WEB DEVELOPMENT</div><h3>Personal Portfolio</h3><p>A responsive personal website to present skills, projects, and ways to get in touch.</p><div class="project-bottom"><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div><a href="#home" aria-label="View portfolio home">You're here ↗</a></div></div></article>
+          <article class="project-card reveal" data-category="python"><div class="project-visual visual-data"><span class="visual-symbol">▥</span><span class="visual-label">DATA · VISUALIZATION</span></div><div class="project-info"><div class="project-type">DATA ANALYSIS</div><h3>F1 Data Dashboard</h3><p>A motorsport data exploration concept focused on turning race statistics into clear insights.</p><div class="project-bottom"><div class="tags"><span>Power BI</span><span>Data</span></div><a href="#contact" aria-label="Ask me about F1 Data Dashboard">Discuss ↗</a></div></div></article>
+        </div>
+      </section>
+
+      <section class="contact-section section" id="contact">
+        <div class="contact-panel reveal"><div><p class="eyebrow">04 / GET IN TOUCH</p><h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2><p class="contact-copy">Have a project, opportunity, or just want to connect? Send me a message.</p></div>
+          <form class="contact-form" id="contactForm">
+            <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+            <label for="email">Your email</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell me what you're thinking..." required></textarea>
+            <button class="button button-primary submit-button" type="submit">Create email <span>↗</span></button>
+            <p class="form-note" id="formNote" aria-live="polite">This opens your email app — no backend required.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">A</span><span>akkyy<span class="brand-dot">.</span></span></a><p>Designed & built with curiosity. © <span id="year"></span> Aakash Mohanty.</p><a class="back-top" href="#home">Back to top ↑</a></footer>
+  </div>
+</body>
+</html>
